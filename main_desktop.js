@@ -205,26 +205,11 @@ if (true) {
             acwrink.innerHTML = 'Auto Click Wrinklers: Off';
         }
     }
-    var donttimeout = document.createElement("button");
-    donttimeout.id = "donttimeout";
-    donttimeout.innerHTML = "Dont Time Out: On";
-    donttimeout.setAttribute("onClick", "donttimeoutpressed()");
-    function donttimeoutpressed() {
-        if (donttimeout.innerHTML == 'Dont Time Out: Off') {
-            donttimeout.innerHTML = 'Dont Time Out: On'; 
-            Game.prefs['timeout'] = 0
-        } else {
-            donttimeout.innerHTML = 'Dont Time Out: Off'; 
-            Game.prefs['timeout'] = 1
-        }
-    }
-    donttimeoutpressed()
-    Game.prefs['timeout'] = 0;
     document.getElementById("sectionRight").prepend(woodenseparator2);
     document.getElementById("sectionRight").prepend(menu);
     document.getElementById("sectionRight").prepend(woodenseparator1);
     document.getElementById("sectionRight").prepend(title);
-    [bgacbutton, acgold, acreindeer, hidetopbar, autobuyupgrades, muteclicksnd, custombuybulkbtn, custombuybulkinput, acwrink, donttimeout]
+    [bgacbutton, acgold, acreindeer, hidetopbar, autobuyupgrades, muteclicksnd, custombuybulkbtn, custombuybulkinput, acwrink]
     .forEach(function(btn) {
         btn.style.color = "#F2F2F2";
         btn.style.background = "#333333";
