@@ -15,8 +15,7 @@ function fixENumber(x) {
     }
     return x;
 }
-if (window.location.href == "https://orteil.dashnet.org/cookieclicker/" || window.location.href == "http://orteil.dashnet.org/cookieclicker/") {
-
+if (true) {
     if (document.getElementById("bettermenu") !== null) {
         document.getElementById("bettermenu").parentNode.removeChild(document.getElementById("bettermenu"));
     }
@@ -291,7 +290,7 @@ if (window.location.href == "https://orteil.dashnet.org/cookieclicker/" || windo
         researchtime.innerHTML = 'Research Time Left: ' + Math.floor(Game.researchT / (Game.fps * 60)) + ' Minutes';
     }, 1000);
     document.addEventListener("keydown", function (event) {
-        if (event.shiftKey) {
+        if (event.key == "u") {
             if (menu.style.display == "none") {
                 woodenseparator1.style.display = "block";
                 woodenseparator2.style.display = "block";
