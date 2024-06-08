@@ -61,7 +61,6 @@ if (true) {
             bgacbutton.innerHTML = 'Autoclicker: Off';
         }
     }
-    bgacpressed();
     var acgold = document.createElement("button");
     acgold.id = "acgold";
     acgold.innerHTML = "Auto Click Golden Cookies: Off";
