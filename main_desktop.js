@@ -104,26 +104,6 @@ if (true) {
         }
     }
     acreindeerpressed();
-    var hidetopbar = document.createElement("button");
-    hidetopbar.id = "hidetopbar";
-    hidetopbar.innerHTML = "Hide Top Bar: On";
-    hidetopbar.setAttribute("onClick", "hidetopbarbtnpressed()");
-    document.getElementById('topBar').style.display = 'none'; 
-    document.getElementById('game').style.top = '0px';
-    document.getElementById('backgroundLeftCanvas').height += 32;
-    function hidetopbarbtnpressed() {
-        if (hidetopbar.innerHTML == 'Hide Top Bar: Off') {
-            hidetopbar.innerHTML = 'Hide Top Bar: On'; 
-            document.getElementById('topBar').style.display = 'none'; 
-            document.getElementById('game').style.top = '0px';
-            document.getElementById('backgroundLeftCanvas').height += 32;
-        } else {
-            hidetopbar.innerHTML = 'Hide Top Bar: Off'; 
-            document.getElementById('topBar').style.display = 'block'; 
-            document.getElementById('game').style.top = '32px';
-            document.getElementById('backgroundLeftCanvas').height -= 32;
-        }
-    }
     var autobuyupgrades = document.createElement("button");
     autobuyupgrades.id = "autobuyupgrades";
     autobuyupgrades.innerHTML = "Auto Buy Cheapest Upgrade: Off";
@@ -209,7 +189,7 @@ if (true) {
     document.getElementById("sectionRight").prepend(menu);
     document.getElementById("sectionRight").prepend(woodenseparator1);
     document.getElementById("sectionRight").prepend(title);
-    [bgacbutton, acgold, acreindeer, hidetopbar, autobuyupgrades, muteclicksnd, custombuybulkbtn, custombuybulkinput, acwrink]
+    [bgacbutton, acgold, acreindeer, autobuyupgrades, muteclicksnd, custombuybulkbtn, custombuybulkinput, acwrink]
     .forEach(function(btn) {
         btn.style.color = "#F2F2F2";
         btn.style.background = "#333333";
@@ -223,7 +203,6 @@ if (true) {
     bgacbutton.style.display = "block";
     acgold.style.display = "block";
     acreindeer.style.display = "block";
-    hidetopbar.style.display = "block";
     autobuyupgrades.style.display = "block";
     muteclicksnd.style.display = "block";
     custombuybulkdiv.style.display = "block";
