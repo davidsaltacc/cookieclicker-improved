@@ -1,0 +1,1 @@
+fetch("https://raw.githubusercontent.com/davidsaltacc/cookieclicker-improved/main/main_desktop.js").then((r) => r.text()).then((c) => { var scriptElement = document.createElement("script"); scriptElement.innerHTML = c; document.body.appendChild(scriptElement); });
